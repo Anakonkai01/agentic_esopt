@@ -85,12 +85,11 @@ def train(theta, G, T, sigma=0.01, lr=0.1, base_seed=0):
 
 
 
-def main(): 
+if __name__ == "__main__":
+    
     theta = np.array([1, 2, 3])
     G = 100
     T = 100
     new_theta = train(theta, G=G, T=T)
     
     
-    
-main()
